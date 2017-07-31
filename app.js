@@ -3,7 +3,9 @@ const express = require('express');
 const logger = require('morgan');
 const path = require('path');
 const bodyParser = require('body-parser');
+//method override for editing
 const methodOverride = require('method-override');
+//cookie parser used for authentication
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const passport = require('passport');
