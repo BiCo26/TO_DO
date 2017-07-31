@@ -31,8 +31,8 @@ TO_DOController.show = (req, res) => {
     });
 };
 
-movieController.create = (req, res) => {
-  Movie.create({
+Controller.create = (req, res) => {
+  TO_DO.create({
     title: req.body.title,
     year: req.body.year,
     genre: req.body.genre,
@@ -44,25 +44,25 @@ movieController.create = (req, res) => {
   });
 };
 
-movieController.update = (req, res) => {
-  Movie.update({
+TO_DOController.update = (req, res) => {
+  TO_DO.update({
 //     title: req.body.title,
 //     year: req.body.year,
 //     genre: req.body.genre,
-//   }, req.params.id).then(movie => {
-//     res.redirect(`/movies/${req.params.id}`);
+//   }, req.params.id).then(TO_DO => {
+//     res.redirect(`/TO_DOS/${req.params.id}`);
 //   }).catch(err => {
 //     console.log(err);
 //     res.status(500).json(err);
 //   });
 // };
 
-// movieController.edit = (req, res) => {
-//   Movie.findById(req.params.id)
+// TO_DOController.edit = (req, res) => {
+//   To_Do.findById(req.params.id)
 //     .then(movie => {
-//       res.render('movies/movie-single-edit', {
+//       res.render('TO_DOS/to_do-single-edit', {
 //         currentPage: 'edit',
-//         data: movie,
+//         data: TO_DOS,
 //       });
 //     }).catch(err => {
 //       console.log(err);
@@ -70,14 +70,14 @@ movieController.update = (req, res) => {
 //     });
 // }
 
-// movieController.delete = (req, res) => {
-//   Movie.destroy(req.params.id)
+// TO_DOController.delete = (req, res) => {
+//   To_Do.destroy(req.params.id)
 //     .then(() => {
-//       res.redirect('/movies');
+//       res.redirect('/TO_DOS');
 //     }).catch(err => {
 //       console.log(err);
 //       res.status(500).json(err);
 //     });
 // }
 
-// module.exports = movieController;
+// module.exports = TO_DOController;
